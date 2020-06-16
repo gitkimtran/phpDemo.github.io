@@ -13,3 +13,4 @@ while ($row = pg_fetch_row($result)){
 		echo" Login success! ";
 	}
 }
+?>
