@@ -12,7 +12,7 @@
 	session_start();
 	$username = $_POST['username'] ?? '';
 	$password = $_POST['password'] ?? '';
-    	if ($username == 'admin' && $password == '123') {
+    	if ($username == 'admin' && $password == '123456') {
         	$_SESSION['user'] = $username;
         	header("location:mainpage.php");
     	} else {
