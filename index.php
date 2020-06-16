@@ -9,7 +9,7 @@ if(isset($_POST['pass'])){
 }
 $result = pg_query($dbconn, query : "select * from tbl_account");
 while ($row = pg_fetch_row($result)){
-	if($row[0]==$username && $row[1]==$pass){
+	if($row[1]==$username && $row[2]==$pass){
 		echo" Login success! ";
 	}
 }
